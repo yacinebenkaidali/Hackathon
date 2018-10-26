@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Habit_Tracker</string>
+    <string name="action_settings">Settings</string>
+    <string name="enter_groupName">Create your habit</string>
+    <string name="enter_some_data">Create your habit</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+</resources>
