@@ -7,6 +7,7 @@ public class Habit {
     public String REGULARITY;
     public String HABIT_TYPE;
     public int CODE_USER;
+    public int Count;
     
     public Habit() {
     }

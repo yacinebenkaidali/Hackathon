@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- These are the options displayed in the category drop-down Spinner -->
+    <string-array name="array_category_options">
+        <item>@string/category_health</item>
+        <item>@string/category_spiritual</item>
+        <item>@string/category_intellectual</item>
+        <item>@string/category_manual</item>
+        <item>@string/category_social</item>
+    </string-array>
+    <!-- These are the options displayed in the moment drop-down Spinner -->
+    <string-array name="array_moment_options">
+        <item>@string/moment_dawn</item>
+        <item>@string/moment_morning</item>
+        <item>@string/moment_afternoon</item>
+        <item>@string/moment_evening</item>
+        <item>@string/moment_night</item>
+    </string-array>
+</resources>

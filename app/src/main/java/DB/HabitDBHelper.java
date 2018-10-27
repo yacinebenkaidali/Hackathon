@@ -21,7 +21,7 @@ public class HabitDBHelper extends SQLiteOpenHelper
 
     private static final String CREATE_HABIT_TIME="CREATE TABLE TIME_HABIT (" +
             "CODE_TIME Integer  NOT NULL PRIMARY KEY AUTOINCREMENT," +
-            "CODE_HABIT VARCHAR(15)  NOT NULL," +
+            "CODE_HABIT Integer  NOT NULL," +
             "COUNT_NUM int ," +
             "DATE_HABIT DATE," +
             "FOREIGN KEY (CODE_HABIT) REFERENCES HABIT (CODE_HABIT)" +

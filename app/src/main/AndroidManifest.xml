@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.yacinebenkaidali.habit_tracker">
+    package="com.example.anis.widget_habbit">
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/habits"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name="com.anychart.sample.charts.ColumnChartActivity" />
+        <activity android:name="com.anychart.sample.MainActivitychart"
+            android:label="Stats"/>
+        <activity android:name="com.anychart.sample.charts.LineChartActivity" />
         <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name"
+            android:name="com.example.yacinebenkaidali.habit_tracker.Splash"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,6 +21,27 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <receiver android:name=".CollectionWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/collection_widget_info" />
+        </receiver>
+
+        <service
+            android:name=".WidgetService"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+
+        <activity android:name="com.example.yacinebenkaidali.habit_tracker.GetStarted" />
+        <activity
+            android:name="com.example.yacinebenkaidali.habit_tracker.MainActivity"
+            android:label="Habits list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.example.yacinebenkaidali.habit_tracker.About"></activity>
     </application>
 
 </manifest>

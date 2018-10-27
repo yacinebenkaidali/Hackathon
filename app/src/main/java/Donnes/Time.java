@@ -1,12 +1,13 @@
 package Donnes;
 
-import java.util.Date;
+import java.text.SimpleDateFormat;
+import java.sql.Date;
 
 public class Time {
     public int CODE_TIME;
-    public int CODE_Habit;
+    public long CODE_Habit;
     public int COUNT_NUM;
-    //public Date DATE_HABIT;
+    public Date DATE_HABIT;
 
     public Time() {
     }
@@ -16,9 +17,9 @@ public class Time {
         this.COUNT_NUM = COUNT_NUM;
     }
 
-    public Time(int CODE_TIME, int COUNT_NUM, Date DATE_HABIT) {
-        this.CODE_TIME = CODE_TIME;
+    public Time( int COUNT_NUM, String DATE_HABIT) {
         this.COUNT_NUM = COUNT_NUM;
-        //this.DATE_HABIT = DATE_HABIT;
+        SimpleDateFormat df=new SimpleDateFormat("yyyy-MM-dd");
+
     }
 }
