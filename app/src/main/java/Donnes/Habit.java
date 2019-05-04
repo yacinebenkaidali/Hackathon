@@ -16,8 +16,9 @@ public class Habit {
         this.DESCRIPTION = DESCRIPTION;
         this.CATEGORY = CATEGORY;
         this.REGULARITY = REGULARITY;
-        this.HABIT_TYPE = HABIT_TYPE;
         this.CODE_USER = CODE_USER;
+        this.HABIT_TYPE = HABIT_TYPE;
+        
     }
 
 }
